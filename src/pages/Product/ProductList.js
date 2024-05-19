@@ -57,7 +57,7 @@ const ProductList = () => {
           <img
             src={`${PRODUCTBASEURL}/uploads/${row.image}`}
             alt={row.name}
-            style={{ maxHeight: "100px" }}
+            style={{ maxHeight: "100px", maxWidth: "100%" }}
           />
         ) : null,
     },
@@ -73,10 +73,10 @@ const ProductList = () => {
     {
       name: "Actions",
       cell: (row) => (
-        <div>
+        <div >
           <button className="btn btn-primary mr-2" onClick={() => navigate(`/product/edit/${row.id}`)}>Edit</button>
           <button
-            className="btn btn-danger"
+            className="btn btn-danger mt-2 mt-md-0"
             onClick={() => handleDeleteClick(row)}
           >
             Delete
