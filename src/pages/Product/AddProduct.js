@@ -119,7 +119,7 @@ const AddProduct = () => {
 
   return (
     <App title="Add Product">
-      <form onSubmit={handleSubmit} className="col-6">
+      <form onSubmit={handleSubmit} className="col-12 col-md-6 ">
         <div className="card">
           <div className="card-body">
             <div className="row">
